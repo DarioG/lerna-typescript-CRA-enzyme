@@ -22,16 +22,11 @@ module.exports = function (wallaby) {
 
   return {
     files: [
-      "packages/**/src/setupTests.ts",
       "packages/**/src/*.+(ts|tsx|json|snap|css|less|sass|scss|jpg|jpeg|gif|png|svg)",
       "!packages/**/node_modules/**",
       "!packages/**/*.test.ts*",
     ],
-    tests: [
-      "packages/**/src/setupTests.ts",
-      "packages/**/*.test.ts*",
-      "!packages/**/node_modules/**",
-    ],
+    tests: ["packages/**/*.test.ts*", "!packages/**/node_modules/**"],
     env: {
       type: "node",
       runner: "node",
