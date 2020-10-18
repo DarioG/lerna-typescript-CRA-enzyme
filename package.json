@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "test:my-project": "yarn workspace my-project test",
+    "start:my-project": "yarn workspace my-project start"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
